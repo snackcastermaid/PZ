@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+
+
+    <title>Snack's Item List</title>
+    <script type="text/javascript">
+        const itemListURL = "https://raw.githubusercontent.com/snackcastermaid/Snack-s-List/master/StoreItems.json";
+        const eventListURL = "https://raw.githubusercontent.com/snackcastermaid/Snack-s-List/master/StoreEvents.json";
+	const traitListURL = "https://raw.githubusercontent.com/snackcastermaid/Snack-s-List/master/Traitlist.json";
+	const raceListURL = "https://raw.githubusercontent.com/snackcastermaid/Snack-s-List/master/races.json";
+    </script>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">SnackCasterMaid</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">	
+           <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.twitch.tv/SnackCasterMaid">My Stream</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+	<main role="main">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">TwitchToolkit</h1>
+                <p>TwitchToolkit is a mod written by Twitch.tv/hodlhodl</p>
+		<p>The complete list of commands are below with descriptions</p>   
+                <ul class="list-group">
+                   <li class="list-group-item">Common Commands</li>
+			<li class="list-group-item">!bal - check balance and karma rate</li>
+                    <li class="list-group-item">!buy - Syntax: !buy beer 6 - purchase an item or event</li>
+			<li class="list-group-item">!backpack - use in place of !buy command to spawn items in your pawn's inventory instead </li>
+			<li class="list-group-item">!surgery - Syntax: !surgery item - queue's item for surgery on your pawn (note, part must be researched to work)</li>
+			
+                   <li class="list-group-item"></li>
+			<li class="list-group-item">Pawn Commands</li>
+			<li class="list-group-item">!join - join the queue to be assigned to an unassigned pawn (free)</li>
+		    <li class="list-group-item">!buy pawn - Syntax: !buy pawn human - purchases a pawn to join(1.5-2K)(see races below)</li>
+                    <li class="list-group-item">!story - view information about your pawns backstory</li>
+                    <li class="list-group-item">!skills - view information about your pawns skills</li>
+		   <li class="list-group-item">!stats - view pawn's statistics</li>
+		   <li class="list-group-item">!health - view pawn's health</li>
+		   <li class="list-group-item">!needs - view pawn's needs</li>
+		   <li class="list-group-item">!gear - view pawn's gear</li>
+		   <li class="list-group-item">!body - view pawn's health conditions</li>
+		   <li class="list-group-item">!work - view pawn's work priorities</li>
+		   <li class="list-group-item">!story - view pawn's background and traits</li>
+			<li class="list-group-item">!kills - check your pawn's kills</li>
+			<li class="list-group-item">!leave - viewer leaves colony</li>
+                    <li class="list-group-item"></li>
+         <li class="list-group-item">Misc Commands</li>
+			<li class="list-group-item">!whatiskarma - explains what the karma system is</li>
+			<li class="list-group-item">!lookup - lookup an item that may not have shown up on the buy list</li>
+		    <li class="list-group-item">!price - displays the price in chat for an item</li>
+		    <li class="list-group-item">!instructions - gives users info on using the mod</li>
+                    <li class="list-group-item">!research - gives users info about the current research being undertaken</li>
+                    <li class="list-group-item">!modsettings - gives user info on how many coins are being earned and global settings</li>
+                    <li class="list-group-item">!giftcoins - Syntax: !giftcoins @username 100 - give another viewer your coins</li>
+       			<li class="list-group-item">!factions - check current factions</li>
+			<li class="list-group-item">!colonist - count how many pawns in the colony</li>
+			<li class="list-group-item">!wealth - check colony wealth</li>
+		   
+                </ul>
+            </div>
+        </div>
+
+        <div ng-app='tabs' ng-controller='tabCtrl'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class='tabs'>
+                            <form>
+                                <div class="form-group">
+                                    
+				<button class="btn btn-success" ng-class="{'active': (selected == '1')}" ng-click='selected=1'>
+                                        Items
+                                    </button>
+
+                                    <button class="btn btn-success" ng-class="{'active': (selected == '2')}" ng-click='selected=2'>
+                                        Events
+                                    </button>
+
+				    <button class="btn btn-success" ng-class="{'active': (selected == '3')}" ng-click='selected=3'>
+                                        Traits
+                                  </button>
+
+
+				<button class="btn btn-success" ng-class="{'active': (selected == '4')}" ng-click='selected=4'>
+                                        Race Prices for !buy pawn
+                                  </button>
+
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label" for="">Price Between:</label>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-min" placeholder="0">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input type="number" class="form-control" id="item-price-max" placeholder="100000">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" ng-show='selected == 1'>
+                    <div class="col-md-12">
+                        <div id="items">
+                            <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
+                                </div>
+                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <p>
+                                <button type="button" class="btn btn-primary sort" data-sort="abr">
+                                    Sort by Name
+                                </button>
+                                
+				 <button type="button" class="btn btn-primary sort" data-sort="price">
+                                    Sort by Price
+                                </button>
+			
+				 <button type="button" class="btn btn-primary sort" data-sort="category">
+                                    Sort by Category
+                                </button>
+                            </p>
+                            <table class="table items">
+                                <tr>
+                                    <th scope="col" class="sort" data-sort="abr">Name</th>
+                                    <th scope="col" class="sort" data-sort="price">Price</th>
+                                    <th scope="col" class="sort" data-sort="category">Category</th>
+                                </tr>
+                                <tbody class="list">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" ng-show='selected == 2'>
+                    <div class="col-md-12">
+                        <div id="events">
+                            <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
+                                </div>
+                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <p>
+                                <button type="button" class="btn btn-primary sort" data-sort="abr">
+                                    Sort by Name
+                                </button>
+                                
+                                 <button type="button" class="btn btn-primary sort" data-sort="price">
+                                    Sort by Price
+                                 </button>
+
+                                <button type="button" class="btn btn-primary sort" data-sort="karmatype">
+                                    Sort by Karma
+                                </button>
+                            </p>
+                            <table class="table events">
+                                <tr>
+                                    <th scope="col" class="sort" data-sort="abr">Name</th>
+                                    <th scope="col" class="sort" data-sort="price">Price</th>
+                                    <th scope="col" class="sort" data-sort="karmatype">Karma</th>
+                                </tr>
+                                <tbody class="list">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="row" ng-show='selected == 3'>
+
+                    <div class="col-md-12">
+                        <div id="traits">
+                            <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
+                                </div>
+                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <p>
+                                <button type="button" class="btn btn-primary sort" data-sort="name">
+                                    Sort by Name
+                                </button>
+                                <button type="button" class="btn btn-primary sort" data-sort="addPrice">
+                                    Sort by Purchase Price
+                                </button>
+
+                                <button type="button" class="btn btn-primary sort" data-sort="removePrice">
+                                    Sort by Removal Price
+                                </button>
+                            </p>
+                            <table class="table traits">
+
+                                <tr>
+                                    <th scope="col" class="sort" data-sort="name">Name</th>
+ 					<th scope="col" class="sort" data-sort="description">Description</th>
+                                    <th scope="col" class="sort" data-sort="addPrice">Price</th>
+                                    <th scope="col" class="sort" data-sort="removePrice">Removal Price</th>
+                                </tr>
+                                <tbody class="list">
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+		
+                    <div class="row" ng-show='selected == 4'>
+                    <div class="col-md-12">
+                        <div id="races">
+                            <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
+                                </div>
+                                <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <p>
+                                <button type="button" class="btn btn-primary sort" data-sort="name">
+                                    Sort by Name
+                                </button>
+                                <button type="button" class="btn btn-primary sort" data-sort="price">
+                                    Sort by Price
+                                </button>
+
+                            
+                            </p>
+                            <table class="table races">
+
+                                <tr>
+                                    <th scope="col" class="sort" data-sort="name">Name</th>
+ 				
+
+                                    <th scope="col" class="sort" data-sort="price">Price</th>
+                                   
+                                </tr>
+                                <tbody class="list">
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+	    </div>
+        </div>
+
+        <div class="container">
+
+            <!-- Example row of columns -->
+
+            <div class="row">
+                <div class="col-md-6">
+                </div>
+
+                <div class="col-md-6">
+                </div>
+            </div>
+            <hr>
+        </div>
+    </main>
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+            <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <style>
+        .sort:after {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            content: "";
+            position: relative;
+            top: -10px;
+            right: -5px;
+        }
+        .sort.asc:after {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #fff;
+            content: "";
+            position: relative;
+            top: 4px;
+            right: -5px;
+        }
+        .sort.desc:after {
+            width: 0;
+            height: 0;
+
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid #fff;
+           content: "";
+            position: relative;
+            top: -4px;
+            right: -5px;
+        }
+    </style>
+
+
+
+    <script type="text/javascript">
+
+
+        let itemList = null;
+
+        $.getJSON(itemListURL, function(data) {
+            var options = {
+                valueNames: ['abr', 'price', 'category'],
+                item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="category"></td></tr>'
+            };
+            var itemData = [];
+            $.each(data.items, function(index, value) {
+                if (value["price"] > 0) {
+                    itemData.push(value);
+                }
+            });
+            itemList = new List('items', options, itemData);
+        });
+
+	    
+        let eventList = null;
+	 $.getJSON(eventListURL, function(data) {
+	 var options = {
+	 valueNames: ['abr', 'price', 'karmatype'],
+	 item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="karmatype"></td></tr>'
+            };
+            var eventData = [];
+            $.each(data.incitems, function(index, value) {
+                if (value["price"] > 0) {
+                    eventData.push(value);
+                }
+            });
+            eventList = new List('events', options, eventData);
+        });
+
+
+	let traitList = null;
+        $.getJSON(traitListURL, function(data) {
+	var options = {
+	valueNames: ['name', 'description', 'addPrice', 'removePrice'],
+	item: '<tr><td class="name" scope="row"></td><td class="description"></td><td class="addPrice"></td><td class="removePrice"></td></tr>'
+	 };
+	var traitData = [];
+	 $.each(data.traits, function(index, value) {
+	if (value["addPrice"] > 0) {
+	traitData.push(value);
+	}
+	 });
+	traitList = new List('traits', options, traitData);
+	});
+	    
+	    
+	 let raceList = null;
+        $.getJSON(raceListURL, function(data) {
+	var options = {
+	valueNames: ['name', 'price'],
+	item: '<tr><td class="name" scope="row"></td><td class="price"></td></tr>'
+	 };
+	var raceData = [];
+	 $.each(data.races, function(index, value) {
+	if (value["price"] > 0) {
+	raceData.push(value);
+	}
+	 });
+	raceList = new List('races', options, raceData);
+	});
+	    
+	    
+	    
+	 $("#item-price-min").keyup(function() {
+	updateItemFilter();
+	});
+        $("#item-price-max").keyup(function() {
+	 updateItemFilter();
+        });
+        function updateItemFilter() {
+            var minPrice = $("#item-price-min").val();
+            var maxPrice = $("#item-price-max").val();
+		
+		
+		
+            itemList.filter(function(item) {
+                var allow = true;
+                if (minPrice != "" && parseInt(item.values().price) < minPrice) {
+                    allow = false;
+                }
+                if (maxPrice != "" && parseInt(item.values().price) > maxPrice) {
+                    allow = false;
+                }
+                return allow;	    
+            });
+		
+	    eventList.filter(function(item) {
+                var allow = true;
+                if (minPrice != "" && parseInt(item.values().price) < minPrice) {
+                    allow = false;
+                }
+                if (maxPrice != "" && parseInt(item.values().price) > maxPrice) {
+                    allow = false;
+                }
+                return allow;    
+            });
+
+		traitList.filter(function(item) {
+                var allow = true;
+                if (minPrice != "" && parseInt(item.values().addPrice) < minPrice) {
+                    allow = false;
+                }
+                if (maxPrice != "" && parseInt(item.values().addPrice) > maxPrice) {
+                    allow = false;
+                }
+                return allow;
+            });
+
+		raceList.filter(function(item) {
+                var allow = true;
+                if (minPrice != "" && parseInt(item.values().price) < minPrice) {
+                    allow = false;
+                }
+                if (maxPrice != "" && parseInt(item.values().price) > maxPrice) {
+                    allow = false;
+                }
+                return allow;
+            });
+        }
+    </script>
+
+    <script type="text/javascript">
+        var tabs = angular.module('tabs', [])
+            .controller('tabCtrl', function($scope) {
+                $scope.selected = "1";
+            });
+    </script>
+</body>
+</html>
