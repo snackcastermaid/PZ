@@ -2,17 +2,17 @@
 	"items" : [
 	{
 "abr": "!bang"
-"price" "1",
+"price": "1",
 "category": "Sounds as if a zombie is banging on a nearby door. Best use is to spam once every second a few times" 
 },
 	{
 "abr": "!bangfar"
-"price" "1",
+"price": "1",
 "category": "Sounds as if a zombie is banging on a distant door. Best use is to spam once every second a few times"  
 },
 	{
 "abr": "!chopper"
-"price" "1000",
+"price": "1000",
 "category": "Sounds as if a zombie is banging on a nearby door. Best use is to spam once every second a few times"  
 },
 	{
