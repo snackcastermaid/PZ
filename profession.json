@@ -12,12 +12,12 @@
 	},
 	{
 		"abr": "Police Officer",
-		"price": "4",
+		"price": "test",
 		"karmatype": "+3 Aiming, +1 Nimble, +2 Reloading"
 	},
 	{
 		"abr": "Park Ranger",
-		"price": "4",
+		"price": "3",
 		"karmatype": "+1 Axe, +1 Carpentry, +2 Foraging, +2 Trapping"
 	},
 	{
