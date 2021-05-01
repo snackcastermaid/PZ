@@ -3,19 +3,19 @@
 	{
 		"name": "tornado2",
 		"addPrice": 12500,
-		"removePrice": "Bad",
+		"removePrice": 1200,
     		"description": "Bad",
 	},
 	{
 		"name": "tornado2",
 		"addPrice": 12500,
-		"removePrice": "Bad",
+		"removePrice": 5000,
     		"description": "Bad",
 	},
 	{
 		"name": "tornado3",
 		"addPrice": 12500,
-		"removePrice": "Bad",
+		"removePrice": 5000,
     		"description": "Bad",
 	}
 	],
