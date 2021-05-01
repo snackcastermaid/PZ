@@ -15,10 +15,8 @@
 
     <title>Snack's Item List</title>
     <script type="text/javascript">
-        const itemListURL = "https://raw.githubusercontent.com/snackcastermaid/Snack-s-List/master/StoreItems.json";
-        const eventListURL = "https://raw.githubusercontent.com/snackcastermaid/Snack-s-List/master/StoreEvents.json";
-	const traitListURL = "https://raw.githubusercontent.com/snackcastermaid/Snack-s-List/master/Traitlist.json";
-	const raceListURL = "https://raw.githubusercontent.com/snackcastermaid/Snack-s-List/master/races.json";
+        const itemListURL = "https://raw.githubusercontent.com/snackcastermaid/PZ/main/pz_commands.txt"; 
+	    
     </script>
 </head>
 
@@ -51,38 +49,6 @@
 		<p>The complete list of commands are below with descriptions</p>   
                 <ul class="list-group">
                    <li class="list-group-item">Common Commands</li>
-			<li class="list-group-item">!bal - check balance and karma rate</li>
-                    <li class="list-group-item">!buy - Syntax: !buy beer 6 - purchase an item or event</li>
-			<li class="list-group-item">!backpack - use in place of !buy command to spawn items in your pawn's inventory instead </li>
-			<li class="list-group-item">!surgery - Syntax: !surgery item - queue's item for surgery on your pawn (note, part must be researched to work)</li>
-			
-                   <li class="list-group-item"></li>
-			<li class="list-group-item">Pawn Commands</li>
-			<li class="list-group-item">!join - join the queue to be assigned to an unassigned pawn (free)</li>
-		    <li class="list-group-item">!buy pawn - Syntax: !buy pawn human - purchases a pawn to join(1.5-2K)(see races below)</li>
-                    <li class="list-group-item">!story - view information about your pawns backstory</li>
-                    <li class="list-group-item">!skills - view information about your pawns skills</li>
-		   <li class="list-group-item">!stats - view pawn's statistics</li>
-		   <li class="list-group-item">!health - view pawn's health</li>
-		   <li class="list-group-item">!needs - view pawn's needs</li>
-		   <li class="list-group-item">!gear - view pawn's gear</li>
-		   <li class="list-group-item">!body - view pawn's health conditions</li>
-		   <li class="list-group-item">!work - view pawn's work priorities</li>
-		   <li class="list-group-item">!story - view pawn's background and traits</li>
-			<li class="list-group-item">!kills - check your pawn's kills</li>
-			<li class="list-group-item">!leave - viewer leaves colony</li>
-                    <li class="list-group-item"></li>
-         <li class="list-group-item">Misc Commands</li>
-			<li class="list-group-item">!whatiskarma - explains what the karma system is</li>
-			<li class="list-group-item">!lookup - lookup an item that may not have shown up on the buy list</li>
-		    <li class="list-group-item">!price - displays the price in chat for an item</li>
-		    <li class="list-group-item">!instructions - gives users info on using the mod</li>
-                    <li class="list-group-item">!research - gives users info about the current research being undertaken</li>
-                    <li class="list-group-item">!modsettings - gives user info on how many coins are being earned and global settings</li>
-                    <li class="list-group-item">!giftcoins - Syntax: !giftcoins @username 100 - give another viewer your coins</li>
-       			<li class="list-group-item">!factions - check current factions</li>
-			<li class="list-group-item">!colonist - count how many pawns in the colony</li>
-			<li class="list-group-item">!wealth - check colony wealth</li>
 		   
                 </ul>
             </div>
@@ -99,20 +65,7 @@
 				<button class="btn btn-success" ng-class="{'active': (selected == '1')}" ng-click='selected=1'>
                                         Items
                                     </button>
-
-                                    <button class="btn btn-success" ng-class="{'active': (selected == '2')}" ng-click='selected=2'>
-                                        Events
-                                    </button>
-
-				    <button class="btn btn-success" ng-class="{'active': (selected == '3')}" ng-click='selected=3'>
-                                        Traits
-                                  </button>
-
-
-				<button class="btn btn-success" ng-class="{'active': (selected == '4')}" ng-click='selected=4'>
-                                        Race Prices for !buy pawn
-                                  </button>
-
+					
                                 </div>
 
                                 <div class="form-group row">
