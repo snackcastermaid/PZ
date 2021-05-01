@@ -7,47 +7,59 @@
 		"defname": "Gunshot"
 	},
 	{
-"abr": "!bangfar"
-"price": 1,
-"category": "Sounds as if a zombie is banging on a distant door. Best use is to spam once every second a few times"  
-},
+		"abr": "!chopper",
+		"price": 1000,
+		"category": "Sounds as if a zombie is banging on a nearby door. Best use is to spam once every second a few times",
+		"defname": "Chopper"
+	},
 	{
-"abr": "!chopper"
-"price": 1000,
-"category": "Sounds as if a zombie is banging on a nearby door. Best use is to spam once every second a few times"  
-},
+		"abr": "!dog",
+		"price": 5,
+		"category": "Ai director's way of moving around nearby hordes. Makes it appear as if the nearby zombie hordes are shuffling around",
+		"defname": "Dog"
+	},
 	{
-
-"abr": "!dog"
-"price" 5,
-"category": "Ai director's way of moving around nearby hordes. Makes it appear as if the nearby zombie hordes are shuffling around" 
-},
+		"abr": "!gunshot",
+		"price": 100,
+		"category": "Ai director's way of moving around hordes in a larger radius. Makes it appear as if the zombie hordes are shuffling around",
+		"defname": "Gunshot"		
+	},
 	{
-"abr": "!gunshot"
-"price" 100,
-"category": "Ai director's way of moving around hordes in a larger radius. Makes it appear as if the zombie hordes are shuffling around"  
-},
+		"abr": "!nearscare",
+		"price": 50,
+		"category": "Sounds as if there is a nearby zombie sneaking up on Snack",
+		"defname": "Nscare"				
+	},
 	{
-"abr": "!nearscare"
-"price" 50,
-"category": "Sounds as if there is a nearby zombie sneaking up on Snack"  
-},
+		"abr": "!windoweclose",
+		"price": 50,
+		"category": "Makes a sound of a nearby window breaking nearby",
+		"defname": "Bwindow"				
+	},
 	{
-"abr": "!windowclose"
-"price" 10,
-"category": "Makes a sound of a nearby window breaking nearby" 
-},
+		"abr": "!windoweclose",
+		"price": 50,
+		"category": "Makes a sound of a nearby window breaking nearby",
+		"defname": "Bwindow"			
+	},
 	{
-"abr": "!windowfar"
-"price" 10,
-"category": "Makes a sound of a distant window breaking such as in another room"  
-},
+		"abr": "!windowefar",
+		"price": 10,
+		"category": "Makes a sound of a distant window breaking such as in another room",
+		"defname": "Bwindow"
+	},
 	{
-
-"abr": "!windowsqueak"
-"price" 5,
-"category": "Makes a sound of a nearby window breaking" 
-}
-],
-	"total": 9 
+		"abr": "!windowefar",
+		"price": 10,
+		"category": "Makes a sound of a distant window breaking such as in another room",
+		"defname": "Bwindow"
+	},
+	{
+		"abr": "!windowsqueak",
+		"price": 5,
+		"category": "Makes a sound of a zombie banging on a nearby window",
+		"defname": "Bwindow"	
+	}
+	],
+	"total": 10
 }
