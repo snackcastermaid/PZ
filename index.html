@@ -18,7 +18,7 @@
         const itemListURL = "https://raw.githubusercontent.com/snackcastermaid/PZ/main/pz_commands.json";
         const eventListURL = "https://raw.githubusercontent.com/snackcastermaid/PZ/main/profession.json";
 	const traitListURL = "https://raw.githubusercontent.com/snackcastermaid/PZ/main/Goodtraits.json";
-	const raceListURL = "https://raw.githubusercontent.com/snackcastermaid/Snack-s-List/master/races.json";
+	const raceListURL = "https://raw.githubusercontent.com/snackcastermaid/PZ/main/badtrait.json";
     </script>
 </head>
 
@@ -217,8 +217,8 @@
                                 <tr>
                                     <th scope="col" class="sort" data-sort="name">Name</th>
  					<th scope="col" class="sort" data-sort="description">Description</th>
-                                    <th scope="col" class="sort" data-sort="addPrice">Skill (+)</th>
-                                    <th scope="col" class="sort" data-sort="removePrice">Skill (-)</th>
+                                    <th scope="col" class="sort" data-sort="addPrice">Cost</th>
+                                    
                                 </tr>
                                 <tbody class="list">
 
@@ -255,7 +255,7 @@
                                     <th scope="col" class="sort" data-sort="name">Name</th>
  				
 
-                                    <th scope="col" class="sort" data-sort="price">Price</th>
+                                    <th scope="col" class="sort" data-sort="price">Cost</th>
                                    
                                 </tr>
                                 <tbody class="list">
@@ -377,7 +377,7 @@
         $.getJSON(traitListURL, function(data) {
 	var options = {
 	valueNames: ['name', 'description', 'addPrice', 'removePrice'],
-	item: '<tr><td class="name" scope="row"></td><td class="description"></td><td class="addPrice"></td><td class="removePrice"></td></tr>'
+	item: '<tr><td class="name" scope="row"></td><td class="description"></td><td class="price"></td></tr>'
 	 };
 	var traitData = [];
 	 $.each(data.traits, function(index, value) {
@@ -393,7 +393,7 @@
         $.getJSON(raceListURL, function(data) {
 	var options = {
 	valueNames: ['name', 'price'],
-	item: '<tr><td class="name" scope="row"></td><td class="price"></td></tr>'
+	item: '<tr><td class="name" scope="row"></td><td class="description"></td><td class="price"></td></tr>'
 	 };
 	var raceData = [];
 	 $.each(data.races, function(index, value) {
