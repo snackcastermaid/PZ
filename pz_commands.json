@@ -2,49 +2,49 @@
 	"items" : [
 	{
 "abr": "!bang"
-"price": "1",
+"price" "1",
 "category": "Sounds as if a zombie is banging on a nearby door. Best use is to spam once every second a few times" 
 },
 	{
 "abr": "!bangfar"
-"price": "1",
+"price" "1",
 "category": "Sounds as if a zombie is banging on a distant door. Best use is to spam once every second a few times"  
 },
 	{
 "abr": "!chopper"
-"price": "1000",
+"price" "1000",
 "category": "Sounds as if a zombie is banging on a nearby door. Best use is to spam once every second a few times"  
 },
 	{
 
 "abr": "!dog"
-"price": "5",
+"price" "5",
 "category": "Ai director's way of moving around nearby hordes. Makes it appear as if the nearby zombie hordes are shuffling around" 
 },
 	{
 "abr": "!gunshot"
-"price": "100",
+"price" "100",
 "category": "Ai director's way of moving around hordes in a larger radius. Makes it appear as if the zombie hordes are shuffling around"  
 },
 	{
 "abr": "!nearscare"
-"price": "50",
+"price" "50",
 "category": "Sounds as if there is a nearby zombie sneaking up on Snack"  
 },
 	{
 "abr": "!windowclose"
-"price": "10",
+"price" "10",
 "category": "Makes a sound of a nearby window breaking nearby" 
 },
 	{
 "abr": "!windowfar"
-"price": "10",
+"price" "10",
 "category": "Makes a sound of a distant window breaking such as in another room"  
 },
 	{
-!windowsqueak
+
 "abr": "!windowsqueak"
-"price": "5",
+"price" "5",
 "category": "Makes a sound of a nearby window breaking" 
 }
 ],
