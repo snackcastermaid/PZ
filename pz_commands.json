@@ -1,6 +1,6 @@
 {
 	"items" : [
-		{
+	{
 		"abr": "!bang",
 		"price": 1,
 		"category": "Sounds as if a zombie is banging on a nearby door. Best use is to spam once every second a few times",
@@ -59,7 +59,6 @@
 		"price": 5,
 		"category": "Makes a sound of a zombie banging on a nearby window",
 		"defname": "Ewindow"	
-	}
 	}
 	],
 	"total": 10
