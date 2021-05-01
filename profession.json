@@ -1,1 +1,20 @@
-
+{
+	"incitems" : [
+	{
+		"abr": "tornado",
+		"price": 12500,
+		"karmatype": "Bad"
+  },
+	{
+		"abr": "removepassion",
+		"price": 5000,
+		"karmatype": "Neutral"
+	},
+	{
+		"abr": "backpack",
+		"price": 1,
+		"karmatype": "Neutral"
+	}
+	],
+	"total": 3
+}
