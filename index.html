@@ -216,8 +216,8 @@
 
                                 <tr>
                                     <th scope="col" class="sort" data-sort="name">Name</th>
- 					<th scope="col" class="sort" data-sort="description">Description</th>
-                                    <th scope="col" class="sort" data-sort="addPrice">Cost</th>
+ 			  <th scope="col" class="sort" data-sort="description">Description</th>
+                                    <th scope="col" class="sort" data-sort="price">Cost</th>
                                     
                                 </tr>
                                 <tbody class="list">
@@ -376,7 +376,7 @@
 	let traitList = null;
         $.getJSON(traitListURL, function(data) {
 	var options = {
-	valueNames: ['name', 'description', 'addPrice', 'removePrice'],
+	valueNames: ['name', 'description', 'price'],
 	item: '<tr><td class="name" scope="row"></td><td class="description"></td><td class="price"></td></tr>'
 	 };
 	var traitData = [];
@@ -392,7 +392,7 @@
 	 let raceList = null;
         $.getJSON(raceListURL, function(data) {
 	var options = {
-	valueNames: ['name', 'price'],
+	valueNames: ['name', 'description', 'price'],
 	item: '<tr><td class="name" scope="row"></td><td class="description"></td><td class="price"></td></tr>'
 	 };
 	var raceData = [];
