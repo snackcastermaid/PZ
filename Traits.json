@@ -1,19 +1,19 @@
 {
 	"traits" : [
 	{
-		"defName": "tornado2",
+		"name": "tornado2",
 		"addPrice": 12500,
 		"removePrice": "Bad",
     		"description": "Bad",
 	},
 	{
-		"defName": "tornado2",
+		"name": "tornado2",
 		"addPrice": 12500,
 		"removePrice": "Bad",
     		"description": "Bad",
 	},
 	{
-		"defName": "tornado3",
+		"name": "tornado3",
 		"addPrice": 12500,
 		"RemovePrice": "Bad",
     		"Description": "Bad",
