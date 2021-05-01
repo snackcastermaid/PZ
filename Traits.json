@@ -1,16 +1,40 @@
 {
   "traits": [
     {
-     
-     
+      "canAdd": true,
+      "canRemove": true,
 
       "addPrice": 5000,
       "removePrice": 5000,
+      "defName": "Abrasive",
+      "degree": 0,
       "name": "abrasive",
+      "data": {
+        "canBypassLimit": false,
+        "conflicts": [
+          "kind",
+          "charismatic",
+          "verycharismatic",
+          "perceptive",
+          "veryperceptive"
+        ],
+        "customName": false,
+        "stats": [
+          "+3 melee"
+        ]
+      },
       "description": "Timmy always says exactly what's on his mind, especially if it's bugging him. That tends to rub people the wrong way.",
-
-
-  
+      "stats": [
+        "+3 melee"
+      ],
+      "conflicts": [
+        "kind",
+        "charismatic",
+        "verycharismatic",
+        "perceptive",
+        "veryperceptive"
+      ],
+      "bypassLimit": false
     }
   ],
   "total": 1
