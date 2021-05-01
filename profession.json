@@ -2,8 +2,8 @@
 	"incitems" : [
 	{
 		"abr": "Unemployed",
-		"price": "8",
-		"karmatype": "8 additional points to spend"
+		"price": "0",
+		"karmatype": "+8 Skill Points"
   	},
 	{
 		"abr": "Fire Officer",
@@ -12,72 +12,72 @@
 	},
 	{
 		"abr": "Police Officer",
-		"price": "-4",
+		"price": 4,
 		"karmatype": "+3 Aiming, +1 Nimble, +2 Reloading"
 	},
 	{
 		"abr": "Park Ranger",
-		"price": " 4 (NEG)",
+		"price": 4,
 		"karmatype": "+1 Axe, +1 Carpentry, +2 Foraging, +2 Trapping"
 	},
 	{
 		"abr": "Construction Worker",
-		"price": -2,
+		"price": 2,
 		"karmatype": "+1 Carpentry +3 Short Blunt Weapons"
 	},
 	{
 		"abr": "Security Guard",
-		"price": -2,
+		"price": 2,
 		"karmatype": "+1 Lightfooted, +2 Sprinting, always alert, even when sleeping"
 	},
 	{
 		"abr": "Carpenter",
-		"price": 2,
-		"karmatype": "+3 Carpentry, +1 Short Blunt Weapons"
+		"price": 0,
+		"karmatype": "+3 Carpentry, +1 Short Blunt Weapons, +2 Skill Points"
 	},
 	{
 		"abr": "Burglar",
-		"price": -6,
+		"price": 6,
 		"karmatype": "+2 Lightfooted, +2 Nimble, +2 Sneaking, less chance of breaking locks and can hotwire cars"
 	},
 	{
 		"abr": "Chef",
-		"price": -4,
+		"price": 4,
 		"karmatype": "+3 Cooking, +1 Maintenance, +1 Short Blade, knows cooking recipes"
 	},
 	{
 		"abr": "Repairman",
-		"price": -4,
+		"price": 4,
 		"karmatype": "+1 Carpentry, +2 Maintenance, +1 Short Blunt"
 	},
 	{
 		"abr": "Farmer",
-		"price": 2,
-		"karmatype": "+3 Farming"
+		"price": 0,
+		"karmatype": "+3 Farming, +2 Skill Points"
 	},
 	{
 		"abr": "Fisherman",
-		"price": -2,
+		"price": 2,
 		"karmatype": "+3 Fishing, +1 Foraging"
 	},
 	{
 		"abr": "Doctor",
-		"price": 2,
-		"karmatype": "+3 First Aid, +1 Short Blade"
+		"price": 0,
+		"karmatype": "+3 First Aid, +1 Short Blade, +2 Skill Points"
 	},
 	{
 		"abr": "Veteran",
-		"price": -8,
+		"price": 8,
 		"karmatype": "+2 Aiming, +2 Reloading, does not reach a state of panic"
 	},
 	{
 		"abr": "Nurse",
-		"price": 2,
-		"karmatype": "+2 First Aid, +1 Lightfooted"
+		"price": 0,
+		"karmatype": "+2 First Aid, +1 Lightfooted, +2 Skill Points"
 	},
 	{
 		"abr": "Fittness Instructor",
-		"price": -6,
+		"price": 6,
 		"karmatype": "+3 Fittness, +2 Sprinting, knows nutritional value of every food"
 	},
 	{
@@ -87,27 +87,27 @@
 	},
 	{
 		"abr": "Burger Flipper",
-		"price": 2,
-		"karmatype": "+2 Cooking, +1 Maintenance, +1 Short Blade, knows cooking recipes"
+		"price": 0,
+		"karmatype": "+2 Cooking, +1 Maintenance, +1 Short Blade, +2 Skill Points, knows cooking recipes"
 	},
 	{
 		"abr": "Electrician",
-		"price": -4,
+		"price": 4,
 		"karmatype": "+3 Electrical"
 	},
 	{
 		"abr": "Engineer",
-		"price": -4,
+		"price": 4,
 		"karmatype": "+1 Carpentry, +1 Electrical"
 	},
 	{
 		"abr": "Metalworker",
-		"price": -6,
+		"price": 6,
 		"karmatype": "+3 Metalworking"
 	},
 	{
 		"abr": "Mechanic",
-		"price": -4,
+		"price": 4,
 		"karmatype": "+3 Carpentry, +1 Short Blunt Weapons"
 	}
 	],
