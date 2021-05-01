@@ -15,8 +15,8 @@
 	{
 		"name": "tornado3",
 		"addPrice": 12500,
-		"RemovePrice": "Bad",
-    		"Description": "Bad",
+		"removePrice": "Bad",
+    		"description": "Bad",
 	}
 	],
 	"total": 3
