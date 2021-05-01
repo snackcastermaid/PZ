@@ -2,7 +2,7 @@
 	"incitems" : [
 	{
 		"abr": "Unemployed",
-		"price": 8,
+		"price": "8",
 		"karmatype": "8 additional points to spend"
   	},
 	{
@@ -12,12 +12,12 @@
 	},
 	{
 		"abr": "Police Officer",
-		"price": 4,
+		"price": "-4",
 		"karmatype": "+3 Aiming, +1 Nimble, +2 Reloading"
 	},
 	{
 		"abr": "Park Ranger",
-		"price": -4,
+		"price": " 4 (NEG)",
 		"karmatype": "+1 Axe, +1 Carpentry, +2 Foraging, +2 Trapping"
 	},
 	{
