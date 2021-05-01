@@ -4,19 +4,19 @@
 		"defName": "tornado",
 		"addPrice": 12500,
 		"RemovePrice": "Bad"
-    "Description": "Bad",
+    		"Description": "Bad",
   },
 	{
 		"defName": "tornado2",
 		"addPrice": 12500,
 		"RemovePrice": "Bad"
-    "Description": "Bad",
+    		"Description": "Bad",
 	},
 	{
 		"defName": "tornado3",
 		"addPrice": 12500,
 		"RemovePrice": "Bad"
-    "Description": "Bad",
+    		"Description": "Bad",
 	}
 	],
 	"total": 3
