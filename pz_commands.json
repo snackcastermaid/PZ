@@ -40,13 +40,13 @@
 		"abr": "!wfar",
 		"price": 10,
 		"category": "Makes a sound of a zombie breaking into a window further away such as another room/floor of the same building. Best used to keep Snack on his toes. 1 Minute Cooldown."",
-		"defname": "Bwindow"			
+		"defname": "Bfar"			
 	},
 	{
 		"abr": "!bangw",
 		"price": 1,
 		"category": "Makes a sound of a zombie banging on a nearby window. Best use is to spam once every second a few times. No Cooldown.",
-		"defname": "Ewindow"	
+		"defname": "windowbang"	
 	}
 	],
 	"total": 8
