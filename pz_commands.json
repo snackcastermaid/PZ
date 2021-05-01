@@ -3,63 +3,51 @@
 	{
 		"abr": "!bang",
 		"price": 1,
-		"category": "Sounds as if a zombie is banging on a nearby door. Best use is to spam once every second a few times",
+		"category": "Sounds as if a zombie is banging on a nearby door or wall. Best use is to spam once every second a few times. No Cooldown.",
 		"defname": "Gunshot"
 	},
 	{
 		"abr": "!chopper",
 		"price": 1000,
-		"category": "Sounds as if a zombie is banging on a nearby door. Best use is to spam once every second a few times",
+		"category": "Sounds as if the helicopter is spawning. Best to use when the survivor is a few days in. 10 Minute Cooldown.",
 		"defname": "Chopper"
 	},
 	{
 		"abr": "!dog",
-		"price": 5,
-		"category": "Ai director's way of moving around nearby hordes. Makes it appear as if the nearby zombie hordes are shuffling around",
+		"price": 10,
+		"category": "Ai director's way of moving around nearby hordes, it makes it appear as if the nearby zombie hordes are shuffling around. Useful when the survivor is out scavenging. 5 Minute Cooldown.",
 		"defname": "Dog"
 	},
 	{
 		"abr": "!gunshot",
 		"price": 100,
-		"category": "Ai director's way of moving around hordes in a larger radius. Makes it appear as if the zombie hordes are shuffling around",
+		"category": "Ai director's way of moving around hordes in a larger radius then the dog command and makes it appear as if the zombie hordes are shuffling around. 10 Minute Cooldown.",
 		"defname": "Gunshot"		
 	},
 	{
-		"abr": "!nearscare",
+		"abr": "!zscare",
 		"price": 50,
-		"category": "Sounds as if there is a nearby zombie sneaking up on Snack",
+		"category": "Sounds as if there is a nearby zombie sneaking up on Snack. Best used when doing something that keeps my character locked into place such as scavenging or TV time. 1 Minute Cooldown.",
 		"defname": "Nscare"				
 	},
 	{
-		"abr": "!windoweclose",
-		"price": 50,
-		"category": "Makes a sound of a nearby window breaking nearby",
+		"abr": "!wclose",
+		"price": 10,
+		"category": "Makes a sound of a zombie breaking into a nearby window. Best used to keep Snack on his toes. 1 Minute Cooldown.",
 		"defname": "Awindow"				
 	},
 	{
-		"abr": "!windoweclose",
-		"price": 50,
-		"category": "Makes a sound of a nearby window breaking nearby",
+		"abr": "!wfar",
+		"price": 10,
+		"category": "Makes a sound of a zombie breaking into a window further away such as another room/floor of the same building. Best used to keep Snack on his toes. 1 Minute Cooldown."",
 		"defname": "Bwindow"			
 	},
 	{
-		"abr": "!windowefar",
-		"price": 10,
-		"category": "Makes a sound of a distant window breaking such as in another room",
-		"defname": "Cwindow"
-	},
-	{
-		"abr": "!windowefar",
-		"price": 10,
-		"category": "Makes a sound of a distant window breaking such as in another room",
-		"defname": "Dwindow"
-	},
-	{
-		"abr": "!windowsqueak",
-		"price": 5,
-		"category": "Makes a sound of a zombie banging on a nearby window",
+		"abr": "!bangw",
+		"price": 1,
+		"category": "Makes a sound of a zombie banging on a nearby window. Best use is to spam once every second a few times. No Cooldown.",
 		"defname": "Ewindow"	
 	}
 	],
-	"total": 10
+	"total": 8
 }
