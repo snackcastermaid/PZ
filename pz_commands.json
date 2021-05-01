@@ -1,10 +1,11 @@
 {
 	"items" : [
-	{
-"abr": "!bang"
-"price": 1,
-"category": "Sounds as if a zombie is banging on a nearby door. Best use is to spam once every second a few times" 
-},
+		{
+		"abr": "!bang",
+		"price": 1,
+		"category": "Sounds as if a zombie is banging on a nearby door. Best use is to spam once every second a few times",
+		"defname": "Gunshot"
+	},
 	{
 "abr": "!bangfar"
 "price": 1,
