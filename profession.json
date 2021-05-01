@@ -2,8 +2,8 @@
 	"incitems" : [
 	{
 		"abr": "Unemployed",
-		"price": "No additional bonuses",
-		"karmatype": 8,
+		"price": 8,
+		"karmatype": "8 additional points to spend"
   	},
 	{
 		"abr": "removepassion",
