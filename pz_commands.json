@@ -34,7 +34,7 @@
 		"abr": "!windoweclose",
 		"price": 50,
 		"category": "Makes a sound of a nearby window breaking nearby",
-		"defname": "Bwindow"				
+		"defname": "Awindow"				
 	},
 	{
 		"abr": "!windoweclose",
@@ -46,19 +46,19 @@
 		"abr": "!windowefar",
 		"price": 10,
 		"category": "Makes a sound of a distant window breaking such as in another room",
-		"defname": "Bwindow"
+		"defname": "Cwindow"
 	},
 	{
 		"abr": "!windowefar",
 		"price": 10,
 		"category": "Makes a sound of a distant window breaking such as in another room",
-		"defname": "Bwindow"
+		"defname": "Dwindow"
 	},
 	{
 		"abr": "!windowsqueak",
 		"price": 5,
 		"category": "Makes a sound of a zombie banging on a nearby window",
-		"defname": "Bwindow"	
+		"defname": "Ewindow"	
 	}
 	],
 	"total": 10
