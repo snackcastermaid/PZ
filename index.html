@@ -193,6 +193,7 @@
                 </div>
 
             <div class="row" ng-show='selected == 3'>
+
                     <div class="col-md-12">
                         <div id="traits">
                             <div class="input-group input-group-sm mb-3">
@@ -205,31 +206,28 @@
                                 <button type="button" class="btn btn-primary sort" data-sort="name">
                                     Sort by Name
                                 </button>
-                                <button type="button" class="btn btn-primary sort" data-sort="price">
-                                    Sort by Cost
-                                </button>
-
+                                <button type="button" class="btn btn-primary sort" data-sort="addPrice">
+                                    Sort by Price
                                 </button>
                             </p>
                             <table class="table traits">
 
                                 <tr>
                                     <th scope="col" class="sort" data-sort="name">Name</th>
- 			  <th scope="col" class="sort" data-sort="description">Description</th>
-                                    <th scope="col" class="sort" data-sort="price">Cost</th>
-                                    
+ 					<th scope="col" class="sort" data-sort="description">Description</th>
+                                    <th scope="col" class="sort" data-sort="addPrice">Cost</th>
                                 </tr>
                                 <tbody class="list">
                                 </tbody>
+                            
                             </table>
                         </div>
                     </div>
                 </div>
-		    
- 		<div class="row" ng-show='selected == 4'>
-
+		
+                    <div class="row" ng-show='selected == 4'>
                     <div class="col-md-12">
-                        <div id="traits">
+                        <div id="races">
                             <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
@@ -241,22 +239,21 @@
                                     Sort by Name
                                 </button>
                                 <button type="button" class="btn btn-primary sort" data-sort="price">
-                                    Sort by Cost
+                                    Sort by Price
                                 </button>
 
-                                </button>
+                            
                             </p>
                             <table class="table races">
 
                                 <tr>
                                     <th scope="col" class="sort" data-sort="name">Name</th>
- 			  <th scope="col" class="sort" data-sort="description">Description</th>
-                                    <th scope="col" class="sort" data-sort="price">Cost</th>
-                                    
+ 				
+
+                                    <th scope="col" class="sort" data-sort="price">Price</th>
+                                   
                                 </tr>
                                 <tbody class="list">
-					
-                                </tbody>
 
                             </table>
                         </div>
@@ -372,8 +369,8 @@
 	let traitList = null;
         $.getJSON(traitListURL, function(data) {
 	var options = {
-	valueNames: ['name', 'description', 'price'],
-	item: '<tr><td class="name" scope="row"></td><td class="description"></td><td class="price"></td></tr>'
+	valueNames: ['name', 'description', 'addPrice', 'removePrice'],
+	item: '<tr><td class="name" scope="row"></td><td class="description"></td><td class="addPrice"></td></tr>'
 	 };
 	var traitData = [];
 	 $.each(data.traits, function(index, value) {
@@ -388,8 +385,8 @@
 	 let raceList = null;
         $.getJSON(raceListURL, function(data) {
 	var options = {
-	valueNames: ['name', 'description', 'price'],
-	item: '<tr><td class="name" scope="row"></td><td class="description"></td><td class="price"></td></tr>'
+	valueNames: ['name', 'price'],
+	item: '<tr><td class="name" scope="row"></td><td class="price"></td></tr>'
 	 };
 	var raceData = [];
 	 $.each(data.races, function(index, value) {
