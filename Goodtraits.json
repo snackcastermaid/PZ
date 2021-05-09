@@ -1,9 +1,175 @@
 {
 	"traits" : [
 	{
-		"abr": "Mechanic",
-		"price": 5,
-		"karmatype": "+3 Carpentry, +1 Short Blunt Weapons"
+		"abr": "Speed Demon",
+		"price": -1,
+		"karmatype": "Drives Very Fast"
+	},
+	{
+		"abr": "Cat's Eyes",
+		"price": -2,
+		"karmatype": "Better Sight at Night"
+	},
+	{
+		"abr": "Dextrous",
+		"price": -2,
+		"karmatype": "Transfer's Items to Inventory More Quickly"
+	},
+	{
+		"abr": "Fast Reader",
+		"price": -2,
+		"karmatype": "Takes Less Time to Read Books"
+		},
+	{
+		"abr": "Outdoorsman",
+		"price": -2,
+		"karmatype": "Not Affected by Harsh Weather"
+	},
+	{
+		"abr": "Wakeful",
+		"price": -2,
+		"karmatype": "Needs Less Sleep"
+	},
+	{
+		"abr": "Iron Gut",
+		"price": -3,
+		"karmatype": "Less Chance to Have Food Illness"
+	},
+	{
+		"abr": "Angler",
+		"price": -4,
+		"karmatype": "+1 Fishing"
+	},
+	{
+		"abr": "Baseball Player",
+		"price": -4,
+		"karmatype": "+1 Long Blunt"
+	},
+	{
+		"abr": "Brave",
+		"price": -4,
+		"karmatype": "Less Prone to Becoming Panicked"
+	},
+	{
+		"abr": "First Aider",
+		"price": -4,
+		"karmatype": "+1 First Aid"
+	},
+	{
+		"abr": "Gardener",
+		"price": -4,
+		"karmatype": "+1 Farming"
+	},
+	{
+		"abr": "Graceful",
+		"price": -4,
+		"karmatype": "Makes Less Noise When Moving"
+	},
+	{
+		"abr": "Inconspicuous",
+		"price": -4,
+		"karmatype": "Less Noticed by Zombies"
+	},
+	{
+		"abr": "Light Eater",
+		"price": -4,
+		"karmatype": "Needs to Eat Less Regularly "
+	},
+	{
+		"abr": "Lucky",
+		"price": -4,
+		"karmatype": "Sometimes, Things Just Go Your Way"
+	},
+	{
+		"abr": "Nutritionist",
+		"price": -4,
+		"karmatype": "Can See Nutritional Value of Any Food"
+	},
+	{
+		"abr": "Resilient",
+		"price": -4,
+		"karmatype": "Less Prone to Disease"
+	},
+	{
+		"abr": "Runner",
+		"price": -4,
+		"karmatype": "+1 Runner"
+	},
+	{
+		"abr": "Sewer",
+		"price": -4,
+		"karmatype": "+1 Taloring"
+	},
+	{
+		"abr": "Amateur Mechanic",
+		"price": -5,
+		"karmatype": "Knows all"
+	},
+	{
+		"abr": "",
+		"price": -5,
+		"karmatype": ""
+	},
+	{
+		"abr": "",
+		"price": -6,
+		"karmatype": ""
+	},
+	{
+		"abr": "",
+		"price": -6,
+		"karmatype": ""
+	},
+	{
+		"abr": "",
+		"price": -6,
+		"karmatype": ""
+	},
+	{
+		"abr": "",
+		"price": -6,
+		"karmatype": ""
+	},
+	{
+		"abr": "",
+		"price": -6,
+		"karmatype": ""
+	},
+	{
+		"abr": "",
+		"price": -6,
+		"karmatype": ""
+	},
+	{
+		"abr": "",
+		"price": -6,
+		"karmatype": ""
+	},
+	{
+		"abr": "",
+		"price": -6,
+		"karmatype": ""
+	},
+	{
+		"abr": "",
+		"price": -6,
+		"karmatype": ""
+	},
+	{
+		"abr": "",
+		"price": -6,
+		"karmatype": ""
+	},
+	{
+		"abr": "",
+		"price": -6,
+		"karmatype": ""
+	},
+	{
+		"abr": "",
+		"price": -6,
+		"karmatype": ""
+
 	}
 	],
 	"total": 1
