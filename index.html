@@ -329,36 +329,36 @@
         });
 
 
-	let traitList = null;
-        $.getJSON(traitListURL, function(data) {
-	var options = {
-	valueNames: ['name', 'description', 'addPrice', 'removePrice'],
-	item: '<tr><td class="name" scope="row"></td><td class="description"></td><td class="addPrice"></td></tr>'
-	 };
-	var traitData = [];
-	 $.each(data.traits, function(index, value) {
-	if (value["addPrice"] > 0) {
-	traitData.push(value);
-	}
-	 });
-	traitList = new List('traits', options, traitData);
-	});
+        let eventList = null;
+	 $.getJSON(traitListURL, function(data) {
+	 var options = {
+	 valueNames: ['abr', 'price', 'karmatype'],
+	 item: '<tr><td class="abr" scope="row"></td><td class="karmatype"></td><td class="price"></td></tr>'
+            };
+            var eventData = [];
+            $.each(data.incitems, function(index, value) {
+                if (value["price"] > 0) {
+                    eventData.push(value);
+                }
+            });
+            eventList = new List('events', options, eventData);
+        });
 	    
 	    
-	 let raceList = null;
-        $.getJSON(raceListURL, function(data) {
-	var options = {
-	valueNames: ['name', 'price'],
-	item: '<tr><td class="name" scope="row"></td><td class="price"></td></tr>'
-	 };
-	var raceData = [];
-	 $.each(data.races, function(index, value) {
-	if (value["price"] > 0) {
-	raceData.push(value);
-	}
-	 });
-	raceList = new List('races', options, raceData);
-	});
+        let eventList = null;
+	 $.getJSON(raceListURL, function(data) {
+	 var options = {
+	 valueNames: ['abr', 'price', 'karmatype'],
+	 item: '<tr><td class="abr" scope="row"></td><td class="karmatype"></td><td class="price"></td></tr>'
+            };
+            var eventData = [];
+            $.each(data.incitems, function(index, value) {
+                if (value["price"] > 0) {
+                    eventData.push(value);
+                }
+            });
+            eventList = new List('events', options, eventData);
+        });
 	    
 	    
 	    
