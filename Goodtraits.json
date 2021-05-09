@@ -203,8 +203,183 @@
 	{
 		"abr": "Strong",
 		"price": -10,
+		"karmatype": "Increased Knockback From Melee Wepons, Increased Carry Weight, +4 Strength"
+	},
+	{
+		"abr": "Sunday Driver",
+		"price": 1,
+		"karmatype": "Drives Very Slow"
+	},
+	{
+		"abr": "All Thumbs",
+		"price": 2,
+		"karmatype": "Transfers Items to Inventory More Slowly"
+	},
+	{
+		"abr": "Clumsy",
+		"price": 2,
+		"karmatype": "Makes More Noise When Moving"
+	},
+	{
+		"abr": "Cowardly",
+		"price": 2,
+		"karmatype": "Especially Prone to Becomming Panicked"
+	},
+	{
+		"abr": "Short Sighted",
+		"price": 2,
+		"karmatype": "Smaller View Distance, Slower Visability Fade"
+	},
+	{
+		"abr": "Slow Reader",
+		"price": 2,
+		"karmatype": "Takes Longer to Read Books"
+	},
+	{
+		"abr": "Weak Stomach",
+		"price": 3,
+		"karmatype": "Higher Chance to Have Food Illness"
+	},
+	{
+		"abr": "Agoraphobic",
+		"price": 4,
+		"karmatype": "Gets Panicked when Outdoors"
+	},
+	{
+		"abr": "Claustrophobic",
+		"price": 4,
+		"karmatype": "Gets Panicked when Indoors"
+	},
+	{
+		"abr": "Conspicuous",
+		"price": 4,
+		"karmatype": "More Likely to be Spotted"
+	},
+	{
+		"abr": "Disorganized",
+		"price": 4,
+		"karmatype": "Decreased Container Inventory Capacity"
+	},
+	{
+		"abr": "Hard of Hearing",
+		"price": 4,
+		"karmatype": "Smaller Perception Radius, Smaller Hearing Range"
+	},
+	{
+		"abr": "Hearty Appetite",
+		"price": 4,
+		"karmatype": "Needs to Eat More Regularly"
+	},
+	{
+		"abr": "Pacifist",
+		"price": 4,
+		"karmatype": "Less Effective with Weapons"
+	},
+	{
+		"abr": "Prone to Illness",
+		"price": 4,
+		"karmatype": "More Prone to Disease"
+	},
+	{
+		"abr": "Sleepyheaed",
+		"price": 4,
+		"karmatype": "Needs More Sleep"
+	},
+	{
+		"abr": "Smoker",
+		"price": 4,
+		"karmatype": "Stress/Unhappiness Decreases when Smoking, not Smoking Increases Stress and Unhappiness"
+	},
+	{
+		"abr": "Unlucky",
+		"price": 4,
+		"karmatype": "What Could go Wrong for You, Usually Does"
+	},
+	{
+		"abr": "Asthmatic",
+		"price": 5,
+		"karmatype": "Faster Endurance Loss"
+	},
+	{
+		"abr": "Hemophobic",
+		"price": 5,
+		"karmatype": "Panic when Performing First Aid on Self, Gets Stressed when Bloody"
+	},
+	{
+		"abr": "Feeble",
+		"price": 6,
+		"karmatype": "Less Knockback from Melee Weapons. Decreased Carrying Weight, -2 Strength"
+	},
+	{
+		"abr": "High Thirst",
+		"price": 6,
+		"karmatype": "Needs more Water"
+	},
+	{
+		"abr": "Out of Shape",
+		"price": 6,
 		"karmatype": ""
+	},
+	{
+		"abr": "Feeble",
+		"price": 6,
+		"karmatype": "Low Endurance and Endurance Regeneration, -2 Endurance"
+	},
+	{
+		"abr": "Overweight",
+		"price": 6,
+		"karmatype": "Reduced Running Speed, Low Endurance and Prone to Injury"
+	},
+	{
+		"abr": "Restless Sleeper",
+		"price": 6,
+		"karmatype": "Requires more Sleep"
+	},
+	{
+		"abr": "Slow Healer",
+		"price": 6,
+		"karmatype": "Recovers Slowly from Injuries and Illness"
+	},
+	{
+		"abr": "Slow Learner",
+		"price": 6,
+		"karmatype": "Descreased XP Gains"
+	},
+	{
+		"abr": "Underweight",
+		"price": 6,
+		"karmatype": "Low Strength, Low Endurance and Prone to Injury, -1 Fitness"
+	},
+	{
+		"abr": "Illiterate",
+		"price": 8,
+		"karmatype": "Cannot Read Books"
+	},
+	{
+		"abr": "Obese",
+		"price": 10,
+		"karmatype": "Reduced Running Speed, Very Low Endurance and Prone to Injury, -2 Fittness"
+	},
+	{
+		"abr": "Unfit",
+		"price": 10,
+		"karmatype": "Very Low Endurance, Very Low Endurance Regeneration, -4 Fitness "
+	},
+	{
+		"abr": "Very Underweight",
+		"price": 10,
+		"karmatype": "Very Low Strength, Very Low Endurance and Prone to Injury, -2 Fitness"
+	},
+	{
+		"abr": "Weak",
+		"price": 10,
+		"karmatype": "Less Knockback from Melee Weapons, decreased Carrying Weight, -5 Strength"
+	},
+	{
+		"abr": "Deaf",
+		"price": 12,
+		"karmatype": "Can't Hear Sounds"
 	}
 	],
-	"total": 41
+	"total": 76
 }
