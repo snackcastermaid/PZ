@@ -161,9 +161,8 @@
                 </div>
 
             <div class="row" ng-show='selected == 3'>
-
                     <div class="col-md-12">
-                        <div id="traits">
+                        <div id="events">
                             <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
@@ -171,19 +170,19 @@
                                 <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
                             </div>
                             <p>
-                                <button type="button" class="btn btn-primary sort" data-sort="name">
+                                <button type="button" class="btn btn-primary sort" data-sort="abr">
                                     Sort by Name
                                 </button>
-                                <button type="button" class="btn btn-primary sort" data-sort="addPrice">
-                                    Sort by Price
-                                </button>
+                                
+                                 <button type="button" class="btn btn-primary sort" data-sort="price">
+                                    Sort by Skill Point Cost
+                                 </button>
                             </p>
-                            <table class="table traits">
-
+                            <table class="table events">
                                 <tr>
-                                    <th scope="col" class="sort" data-sort="name">Name</th>
- 					<th scope="col" class="sort" data-sort="description">Description</th>
-                                    <th scope="col" class="sort" data-sort="addPrice">Cost</th>
+                                    <th scope="col" class="sort" data-sort="abr">Name</th>
+                                    <th scope="col" class="sort" data-sort="price">Benefits</th>
+                                    <th scope="col" class="sort" data-sort="karmatype">Skill Point Cost</th>
                                 </tr>
                                 <tbody class="list">
                                 </tbody>
@@ -195,7 +194,7 @@
 		
                     <div class="row" ng-show='selected == 4'>
                     <div class="col-md-12">
-                        <div id="races">
+                        <div id="events">
                             <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
@@ -203,23 +202,19 @@
                                 <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
                             </div>
                             <p>
-                                <button type="button" class="btn btn-primary sort" data-sort="name">
+                                <button type="button" class="btn btn-primary sort" data-sort="abr">
                                     Sort by Name
                                 </button>
-                                <button type="button" class="btn btn-primary sort" data-sort="price">
-                                    Sort by Price
-                                </button>
-
-                            
+                                
+                                 <button type="button" class="btn btn-primary sort" data-sort="price">
+                                    Sort by Skill Point Cost
+                                 </button>
                             </p>
-                            <table class="table races">
-
+                            <table class="table events">
                                 <tr>
-                                    <th scope="col" class="sort" data-sort="name">Name</th>
- 				
-
-                                    <th scope="col" class="sort" data-sort="price">Price</th>
-                                   
+                                    <th scope="col" class="sort" data-sort="abr">Name</th>
+                                    <th scope="col" class="sort" data-sort="price">Benefits</th>
+                                    <th scope="col" class="sort" data-sort="karmatype">Skill Point Cost</th>
                                 </tr>
                                 <tbody class="list">
 
