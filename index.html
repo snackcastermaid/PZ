@@ -49,7 +49,13 @@
                 <h1 class="display-3">Project Zomboid Insanity Integration</h1>
                 <p>This is a mod made by SnackCasterMaid</p>
 		<p>The complete list of commands are below with descriptions</p>   
-                <ul class="list-group">			
+                <ul class="list-group">
+                   <li class="list-group-item">Common Commands</li>
+			<li class="list-group-item">!bal - check balance and rate</li>
+                    <li class="list-group-item">!buy - Syntax: !buy beer 6 - purchase an item or event</li>
+			<li class="list-group-item">!backpack - use in place of !buy command to spawn items in your pawn's inventory instead </li>
+			<li class="list-group-item">!surgery - Syntax: !surgery item - queue's item for surgery on your pawn (note, part must be researched to work)</li>
+			
                    <li class="list-group-item"></li>
 			<li class="list-group-item">Note: This list is incomplete</li>
                 </ul>
@@ -161,8 +167,9 @@
                 </div>
 
             <div class="row" ng-show='selected == 3'>
+
                     <div class="col-md-12">
-                        <div id="events">
+                        <div id="traits">
                             <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
@@ -170,19 +177,19 @@
                                 <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
                             </div>
                             <p>
-                                <button type="button" class="btn btn-primary sort" data-sort="abr">
+                                <button type="button" class="btn btn-primary sort" data-sort="name">
                                     Sort by Name
                                 </button>
-                                
-                                 <button type="button" class="btn btn-primary sort" data-sort="price">
-                                    Sort by Skill Point Cost
-                                 </button>
+                                <button type="button" class="btn btn-primary sort" data-sort="addPrice">
+                                    Sort by Price
+                                </button>
                             </p>
-                            <table class="table events">
+                            <table class="table traits">
+
                                 <tr>
-                                    <th scope="col" class="sort" data-sort="abr">Name</th>
-                                    <th scope="col" class="sort" data-sort="price">Benefits</th>
-                                    <th scope="col" class="sort" data-sort="karmatype">Skill Point Cost</th>
+                                    <th scope="col" class="sort" data-sort="name">Name</th>
+ 					<th scope="col" class="sort" data-sort="description">Description</th>
+                                    <th scope="col" class="sort" data-sort="addPrice">Cost</th>
                                 </tr>
                                 <tbody class="list">
                                 </tbody>
@@ -194,7 +201,7 @@
 		
                     <div class="row" ng-show='selected == 4'>
                     <div class="col-md-12">
-                        <div id="events">
+                        <div id="races">
                             <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
@@ -202,19 +209,23 @@
                                 <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
                             </div>
                             <p>
-                                <button type="button" class="btn btn-primary sort" data-sort="abr">
+                                <button type="button" class="btn btn-primary sort" data-sort="name">
                                     Sort by Name
                                 </button>
-                                
-                                 <button type="button" class="btn btn-primary sort" data-sort="price">
-                                    Sort by Skill Point Cost
-                                 </button>
+                                <button type="button" class="btn btn-primary sort" data-sort="price">
+                                    Sort by Price
+                                </button>
+
+                            
                             </p>
-                            <table class="table events">
+                            <table class="table races">
+
                                 <tr>
-                                    <th scope="col" class="sort" data-sort="abr">Name</th>
-                                    <th scope="col" class="sort" data-sort="price">Benefits</th>
-                                    <th scope="col" class="sort" data-sort="karmatype">Skill Point Cost</th>
+                                    <th scope="col" class="sort" data-sort="name">Name</th>
+ 				
+
+                                    <th scope="col" class="sort" data-sort="price">Price</th>
+                                   
                                 </tr>
                                 <tbody class="list">
 
@@ -329,36 +340,36 @@
         });
 
 
-        let eventList = null;
-	 $.getJSON(traitListURL, function(data) {
-	 var options = {
-	 valueNames: ['abr', 'price', 'karmatype'],
-	 item: '<tr><td class="abr" scope="row"></td><td class="karmatype"></td><td class="price"></td></tr>'
-            };
-            var eventData = [];
-            $.each(data.incitems, function(index, value) {
-                if (value["price"] > 0) {
-                    eventData.push(value);
-                }
-            });
-            eventList = new List('events', options, eventData);
-        });
+	let traitList = null;
+        $.getJSON(traitListURL, function(data) {
+	var options = {
+	valueNames: ['name', 'description', 'addPrice', 'removePrice'],
+	item: '<tr><td class="name" scope="row"></td><td class="description"></td><td class="addPrice"></td></tr>'
+	 };
+	var traitData = [];
+	 $.each(data.traits, function(index, value) {
+	if (value["addPrice"] > 0) {
+	traitData.push(value);
+	}
+	 });
+	traitList = new List('traits', options, traitData);
+	});
 	    
 	    
-        let eventList = null;
-	 $.getJSON(raceListURL, function(data) {
-	 var options = {
-	 valueNames: ['abr', 'price', 'karmatype'],
-	 item: '<tr><td class="abr" scope="row"></td><td class="karmatype"></td><td class="price"></td></tr>'
-            };
-            var eventData = [];
-            $.each(data.incitems, function(index, value) {
-                if (value["price"] > 0) {
-                    eventData.push(value);
-                }
-            });
-            eventList = new List('events', options, eventData);
-        });
+	 let raceList = null;
+        $.getJSON(raceListURL, function(data) {
+	var options = {
+	valueNames: ['name', 'price'],
+	item: '<tr><td class="name" scope="row"></td><td class="price"></td></tr>'
+	 };
+	var raceData = [];
+	 $.each(data.races, function(index, value) {
+	if (value["price"] > 0) {
+	raceData.push(value);
+	}
+	 });
+	raceList = new List('races', options, raceData);
+	});
 	    
 	    
 	    
