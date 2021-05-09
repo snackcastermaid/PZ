@@ -103,74 +103,108 @@
 	{
 		"abr": "Amateur Mechanic",
 		"price": -5,
-		"karmatype": "Knows all"
+		"karmatype": "+1 Mechanics, Familiar with all Vehicle Types"
 	},
 	{
-		"abr": "",
+		"abr": "Gymnast",
 		"price": -5,
-		"karmatype": ""
+		"karmatype": "+1 Lightfooted, +1 Nimble"
 	},
 	{
-		"abr": "",
+		"abr": "Brawler",
 		"price": -6,
-		"karmatype": ""
+		"karmatype": "+1 Axe, +1 Long Blunt"
 	},
 	{
-		"abr": "",
+		"abr": "Cook",
 		"price": -6,
-		"karmatype": ""
+		"karmatype": "Know Cooking Recipes, +2 Cook"
 	},
 	{
-		"abr": "",
+		"abr": "Eagle Eyed",
 		"price": -6,
-		"karmatype": ""
+		"karmatype": "Higher Visability Rate"
 	},
 	{
-		"abr": "",
+		"abr": "Fast Healer",
 		"price": -6,
-		"karmatype": ""
+		"karmatype": "Recovers From Injury and Sickness Faster"
 	},
 	{
-		"abr": "",
+		"abr": "Fast Learner",
 		"price": -6,
-		"karmatype": ""
+		"karmatype": "Increased XP Gains"
 	},
 	{
-		"abr": "",
+		"abr": "Fit",
 		"price": -6,
-		"karmatype": ""
+		"karmatype": "+2 Fittness"
 	},
 	{
-		"abr": "",
+		"abr": "Former Scout",
 		"price": -6,
-		"karmatype": ""
+		"karmatype": "+1 First Aid, +1 Foraging"
 	},
 	{
-		"abr": "",
+		"abr": "Herbalist",
 		"price": -6,
-		"karmatype": ""
+		"karmatype": "Can Find Medicinal Herbs and Craft Medicinal Poultices From Them"
 	},
 	{
-		"abr": "",
+		"abr": "Hiker",
 		"price": -6,
-		"karmatype": ""
+		"karmatype": "+1 Foraging, +1 Trapping"
 	},
 	{
-		"abr": "",
+		"abr": "Keen Hearing",
 		"price": -6,
-		"karmatype": ""
+		"karmatype": "Larger Hearing Radius"
 	},
 	{
-		"abr": "",
+		"abr": "Low Thirst",
 		"price": -6,
-		"karmatype": ""
+		"karmatype": "Requires Less Water"
 	},
 	{
-		"abr": "",
+		"abr": "Organized",
 		"price": -6,
+		"karmatype": "Increased Inventory Size"
+	},
+	{
+		"abr": "Stout",
+		"price": -6,
+		"karmatype": "+2 Strength"
+	},
+	{
+		"abr": "Adrenaline Junkie",
+		"price": -8,
+		"karmatype": "Moves Faster When Panicked"
+	},
+	{
+		"abr": "Handy",
+		"price": -8,
+		"karmatype": "+1 Carpentry, +1 Maintance"
+	},
+	{
+		"abr": "Hunter",
+		"price": -8,
+		"karmatype": "+1 Aiming, +1 Short Blade, +1 Sneaking, +1 Trapping"
+	},
+	{
+		"abr": "Thick Skinned",
+		"price": -8,
+		"karmatype": "Less Chance a Scratch or Bite Breaks the Skin"
+	},
+	{
+		"abr": "Athletic",
+		"price": -10,
+		"karmatype": "Faster Running Speed, Can Run for Longer, +4 Fittness"
+	},
+	{
+		"abr": "Strong",
+		"price": -10,
 		"karmatype": ""
-
 	}
 	],
-	"total": 1
+	"total": 41
 }
