@@ -177,19 +177,19 @@
                                 <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
                             </div>
                             <p>
-                                <button type="button" class="btn btn-primary sort" data-sort="name">
+                                <button type="button" class="btn btn-primary sort" data-sort="abr">
                                     Sort by Name
                                 </button>
-                                <button type="button" class="btn btn-primary sort" data-sort="addPrice">
+                                <button type="button" class="btn btn-primary sort" data-sort="price">
                                     Sort by Price
                                 </button>
                             </p>
                             <table class="table traits">
 
                                 <tr>
-                                    <th scope="col" class="sort" data-sort="name">Name</th>
- 					<th scope="col" class="sort" data-sort="description">Description</th>
-                                    <th scope="col" class="sort" data-sort="addPrice">Cost</th>
+                                    <th scope="col" class="sort" data-sort="abr">Name</th>
+ 					<th scope="col" class="sort" data-sort="karmatype">Description</th>
+                                    <th scope="col" class="sort" data-sort="price">Cost</th>
                                 </tr>
                                 <tbody class="list">
                                 </tbody>
@@ -209,7 +209,7 @@
                                 <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
                             </div>
                             <p>
-                                <button type="button" class="btn btn-primary sort" data-sort="name">
+                                <button type="button" class="btn btn-primary sort" data-sort="abr">
                                     Sort by Name
                                 </button>
                                 <button type="button" class="btn btn-primary sort" data-sort="price">
@@ -222,8 +222,7 @@
 
                                 <tr>
                                     <th scope="col" class="sort" data-sort="name">Name</th>
- 				
-
+					<th scope="col" class="sort" data-sort="karmatype">Description</th>
                                     <th scope="col" class="sort" data-sort="price">Price</th>
                                    
                                 </tr>
@@ -343,8 +342,8 @@
 	let traitList = null;
         $.getJSON(traitListURL, function(data) {
 	var options = {
-	valueNames: ['name', 'description', 'addPrice', 'removePrice'],
-	item: '<tr><td class="name" scope="row"></td><td class="description"></td><td class="addPrice"></td></tr>'
+	valueNames: ['abr', 'karmatype', 'price'],
+	item: '<tr><td class="abr" scope="row"></td><td class="karmatype"></td><td class="price"></td></tr>'
 	 };
 	var traitData = [];
 	 $.each(data.traits, function(index, value) {
@@ -360,7 +359,7 @@
         $.getJSON(raceListURL, function(data) {
 	var options = {
 	valueNames: ['name', 'price'],
-	item: '<tr><td class="name" scope="row"></td><td class="price"></td></tr>'
+	item: '<tr><td class="abr" scope="row"></td><td class="karmatype"></td><td class="price"></td></tr>'
 	 };
 	var raceData = [];
 	 $.each(data.races, function(index, value) {
