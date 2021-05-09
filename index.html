@@ -188,8 +188,8 @@
 
                                 <tr>
                                     <th scope="col" class="sort" data-sort="abr">Name</th>
- 					<th scope="col" class="sort" data-sort="karmatype">Description</th>
-                                    <th scope="col" class="sort" data-sort="price">Cost</th>
+                                    <th scope="col" class="sort" data-sort="karmatype">Description</th>
+					<th scope="col" class="sort" data-sort="price">Cost</th>
                                 </tr>
                                 <tbody class="list">
                                 </tbody>
@@ -222,7 +222,6 @@
 
                                 <tr>
                                     <th scope="col" class="sort" data-sort="name">Name</th>
-					<th scope="col" class="sort" data-sort="karmatype">Description</th>
                                     <th scope="col" class="sort" data-sort="price">Price</th>
                                    
                                 </tr>
@@ -347,7 +346,7 @@
 	 };
 	var traitData = [];
 	 $.each(data.traits, function(index, value) {
-	if (value["addPrice"] > 0) {
+	if (value["price"] > 0) {
 	traitData.push(value);
 	}
 	 });
