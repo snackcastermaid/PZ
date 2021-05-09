@@ -28,7 +28,7 @@
 	{
 		"abr": "Security Guard",
 		"price": -2,
-		"karmatype": "+1 Lightfooted, +2 Sprinting, always alert, even when sleeping"
+		"karmatype": "+1 Lightfooted, +2 Sprinting, Night Owl Trait (always alert, even when sleeping)"
 	},
 	{
 		"abr": "Carpenter",
@@ -38,12 +38,12 @@
 	{
 		"abr": "Burglar",
 		"price": -6,
-		"karmatype": "+2 Lightfooted, +2 Nimble, +2 Sneaking, less chance of breaking locks and can hotwire cars"
+		"karmatype": "+2 Lightfooted, +2 Nimble, +2 Sneaking, Burglar Trait (less chance of breaking locks and can hotwire cars)"
 	},
 	{
 		"abr": "Chef",
 		"price": -4,
-		"karmatype": "+3 Cooking, +1 Maintenance, +1 Short Blade, knows cooking recipes"
+		"karmatype": "+3 Cooking, +1 Maintenance, +1 Short Blade, Cook Trait (knows cooking recipes)"
 	},
 	{
 		"abr": "Repairman",
@@ -88,7 +88,7 @@
 	{
 		"abr": "Burger Flipper",
 		"price": 2,
-		"karmatype": "+2 Cooking, +1 Maintenance, +1 Short Blade, +2 Skill Points, knows cooking recipes"
+		"karmatype": "+2 Cooking, +1 Maintenance, +1 Short Blade, +2 Skill Points, Cook Talent (knows cooking recipes)"
 	},
 	{
 		"abr": "Electrician",
@@ -108,7 +108,7 @@
 	{
 		"abr": "Mechanic",
 		"price": -4,
-		"karmatype": "+3 Carpentry, +1 Short Blunt Weapons"
+		"karmatype": "+3 Carpentry, +1 Short Blunt Weapons, Amateur Mechanic"
 	}
 	],
 	"total": 22
