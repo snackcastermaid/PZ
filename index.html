@@ -222,6 +222,7 @@
 
                                 <tr>
                                     <th scope="col" class="sort" data-sort="name">Name</th>
+					<th scope="col" class="sort" data-sort="karmatype">Description</th>
                                     <th scope="col" class="sort" data-sort="price">Price</th>
                                    
                                 </tr>
@@ -357,7 +358,7 @@
 	 let raceList = null;
         $.getJSON(raceListURL, function(data) {
 	var options = {
-	valueNames: ['name', 'price'],
+	valueNames: ['abr', 'karmatype', 'price'],
 	item: '<tr><td class="abr" scope="row"></td><td class="karmatype"></td><td class="price"></td></tr>'
 	 };
 	var raceData = [];
