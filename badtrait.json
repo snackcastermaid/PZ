@@ -1,7 +1,7 @@
 {
-	"traits" : [
+	"races" : [
 	{
-		"abr": "Unemployed",
+		"abr": "Unemployedtest",
 		"price": 1,
 		"karmatype": "+8 Skill Points"
   	},
