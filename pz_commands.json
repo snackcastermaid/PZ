@@ -47,7 +47,13 @@
 		"price": 1,
 		"category": "Makes a sound of a zombie banging on a nearby window. Best use is to spam once every second a few times. No Cooldown.",
 		"defname": "windowbang"	
+	},
+	{
+		"abr": "!alarm",
+		"price": 250,
+		"category": "Sounds as if a house alarm is going off. Best used when Snack enters a house for the first time. 5 Minute Cooldown.",
+		"defname": "Halarm"
 	}
 	],
-	"total": 8
+	"total": 9
 }
