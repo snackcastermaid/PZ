@@ -33,7 +33,7 @@
 	{
 		"abr": "!penalty:push",
 		"price": 1000,
-		"category": "Adds a penalty. If I say a specific word, the Survivor start pushing randomly 3 times. 1 per run. 10 Minute Cooldown.. 10 Minute Cooldown.",
+		"category": "Adds a penalty. If I say a specific word, the Survivor will start pushing randomly 3 times. 1 per run. 10 Minute Cooldown.. 10 Minute Cooldown.",
 		"defname": "Push"
 	},
 	{
