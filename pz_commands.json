@@ -15,49 +15,49 @@
 	{
 		"abr": "!penalty:unequip",
 		"price": 1000,
-		"category": ". 10 Minute Cooldown.",
+		"category": "Adds a penalty. If I say a specific word, the Survivor unequip my weapon. 1 per run. 10 Minute Cooldown.",
 		"defname": "Unequip"
 	},
 	{
 		"abr": "!penalty:crouch",
 		"price": 1000,
-		"category": ". 10 Minute Cooldown.",
+		"category": "Adds a penalty. If I say a specific word, the Survivor couch and shout. 1 per run. 10 Minute Cooldown.",
 		"defname": "Crouch"
 	},
 	{
 		"abr": "!penalty:dropeverything",
 		"price": 1000,
-		"category": ". 10 Minute Cooldown.",
+		"category": "Adds a penalty. If I say a specific word, the Survivor drop everything in my inventory. 1 per run. 10 Minute Cooldown.",
 		"defname": "Drop"
 	},
 	{
 		"abr": "!penalty:push",
 		"price": 1000,
-		"category": ". 10 Minute Cooldown.",
+		"category": "Adds a penalty. If I say a specific word, the Survivor start pushing randomly 3 times. 1 per run. 10 Minute Cooldown.. 10 Minute Cooldown.",
 		"defname": "Push"
 	},
 	{
 		"abr": "!penalty:scream",
 		"price": 1000,
-		"category": ". 10 Minute Cooldown.",
+		"category": "Adds a penalty. If I say a specific word, the Survivor will shout. 1 per run. 10 Minute Cooldown.",
 		"defname": "Scream"
 	},
 	{
 		"abr": "!penalty:run",
 		"price": 1000,
-		"category": ". 10 Minute Cooldown.",
+		"category": "Adds a penalty. If I say a specific word, the Survivor will be forced to run for 5 seconds. 10 Minute Cooldown.",
 		"defname": "Run"
 	},
 	{
 		"abr": "!penalty:openeverything",
 		"price": 1000,
-		"category": ". 10 Minute Cooldown.",
+		"category": "Adds a penalty. If I say a specific word, the Survivor opens every inventory. 1 per run. 10 Minute Cooldown..",
 		"defname": "Unequip"
 	},
 	{
 		"abr": "!penalty:keys",
 		"price": 1000,
-		"category": ". 10 Minute Cooldown.",
+		"category": "Adds a penalty. If I say a specific word, the Survivor shut off my car. 1 per run. 10 Minute Cooldown..",
 		"defname": "Keys"
 	},
 	{
