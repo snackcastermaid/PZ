@@ -13,6 +13,54 @@
 		"defname": "Chopper"
 	},
 	{
+		"abr": "!penalty:unequip",
+		"price": 1000,
+		"category": ". 10 Minute Cooldown.",
+		"defname": "Unequip"
+	},
+	{
+		"abr": "!penalty:crouch",
+		"price": 1000,
+		"category": ". 10 Minute Cooldown.",
+		"defname": "Crouch"
+	},
+	{
+		"abr": "!penalty:dropeverything",
+		"price": 1000,
+		"category": ". 10 Minute Cooldown.",
+		"defname": "Drop"
+	},
+	{
+		"abr": "!penalty:push",
+		"price": 1000,
+		"category": ". 10 Minute Cooldown.",
+		"defname": "Push"
+	},
+	{
+		"abr": "!penalty:scream",
+		"price": 1000,
+		"category": ". 10 Minute Cooldown.",
+		"defname": "Scream"
+	},
+	{
+		"abr": "!penalty:run",
+		"price": 1000,
+		"category": ". 10 Minute Cooldown.",
+		"defname": "Run"
+	},
+	{
+		"abr": "!penalty:openeverything",
+		"price": 1000,
+		"category": ". 10 Minute Cooldown.",
+		"defname": "Unequip"
+	},
+	{
+		"abr": "!penalty:keys",
+		"price": 1000,
+		"category": ". 10 Minute Cooldown.",
+		"defname": "Keys"
+	},
+	{
 		"abr": "!dog",
 		"price": 10,
 		"category": "Ai director's way of moving around nearby hordes, it makes it appear as if the nearby zombie hordes are shuffling around. Useful when the survivor is out scavenging. 5 Minute Cooldown.",
@@ -55,5 +103,5 @@
 		"defname": "Halarm"
 	}
 	],
-	"total": 9
+	"total": 17
 }
